@@ -1,22 +1,92 @@
-# Enjaz Management System 🚀
-A Modern Task and Resource Management Web Application
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enjaz Platform - Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
 
-## 📌 Problem Statement
-Small educational institutions and consultancy offices often struggle with task displacement and resource fragmentation due to reliance on verbal communication or unorganized messaging. This leads to project delays and decreased productivity.
+    <div class="flex h-screen overflow-hidden">
+        
+        <div class="hidden md:flex w-64 bg-blue-900 text-white flex-col">
+            <div class="p-6 text-2xl font-bold border-b border-blue-800 italic">Enjaz Platform</div>
+            <nav class="flex-1 p-4 space-y-2 text-sm font-medium">
+                <a href="#" class="block py-3 px-4 rounded bg-blue-800 shadow-lg text-white">Dashboard</a>
+                <a href="#" class="block py-3 px-4 rounded hover:bg-blue-700 transition duration-200">Task Management</a>
+                <a href="#" class="block py-3 px-4 rounded hover:bg-blue-700 transition duration-200">Resources Library</a>
+                <a href="#" class="block py-3 px-4 rounded hover:bg-blue-700 transition duration-200">Analytics Reports</a>
+            </nav>
+            <div class="p-4 border-t border-blue-800 text-xs text-blue-400 text-center">
+                © 2026 Enjaz Platform | Project
+            </div>
+        </div>
 
-## ✅ The Solution
-Enjaz Platform provides a centralized web dashboard to:
-* Track projects and distribute tasks efficiently.
-* Monitor real-time progress and set clear deadlines.
-* Provide a cloud-based database for essential documents and reporting.
+        <div class="flex-1 flex flex-col overflow-hidden">
+            
+            <header class="bg-white shadow-sm border-b p-4 flex justify-between items-center px-8">
+                <h2 class="text-xl font-bold text-gray-800">Admin Control Panel</h2>
+                <div class="flex items-center space-x-4">
+                    <div class="text-right hidden sm:block">
+                        <p class="text-sm font-bold text-gray-700 uppercase leading-none">Management Account</p>
+                        <p class="text-xs text-green-500 font-semibold">Online Now</p>
+                    </div>
+                    <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold shadow-md">
+                        M
+                    </div>
+                </div>
+            </header>
 
-## 🛠️ Tech Stack (Proposed)
-* Front-end: HTML5, Tailwind CSS, JavaScript.
-* Design: Figma for UI/UX Prototyping.
-* Documentation: Microsoft Word (Marketing & Technical Reports).
+            <main class="flex-1 overflow-y-auto p-8">
+                
+                <div class="mb-8">
+                    <h1 class="text-2xl font-bold text-gray-800">Welcome Back! 👋</h1>
+                    <p class="text-gray-500">Here is what's happening in your educational institution today.</p>
+                </div>
 
-## 📅 Project Timeline (Gantt Chart Logic)
-- Weeks 6-8: Ideation & UI/UX Design (Current Phase).
-- Weeks 9-10: Environment Setup & Front-end Development.
-- Weeks 11-12: Database Integration & Back-end Logic.
-- Week 13: Final Testing, Deployment, and Presentation.
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-blue-600 bg-blue-50 px-2 py-1 rounded text-xs font-bold uppercase">Active</span>
+                        </div>
+                        <p class="text-sm text-gray-500 font-medium">Total Active Tasks</p>
+                        <p class="text-4xl font-bold text-gray-800 mt-1">24</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-yellow-600 bg-yellow-50 px-2 py-1 rounded text-xs font-bold uppercase">Pending</span>
+                        </div>
+                        <p class="text-sm text-gray-500 font-medium">In Progress</p>
+                        <p class="text-4xl font-bold text-gray-800 mt-1">10</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                        <div class="flex items-center justify-between mb-2"><span class="text-green-600 bg-green-50 px-2 py-1 rounded text-xs font-bold uppercase">Finished</span>
+                        </div>
+                        <p class="text-sm text-gray-500 font-medium">Completed Tasks</p>
+                        <p class="text-4xl font-bold text-gray-800 mt-1">14</p>
+                    </div>
+                </div>
+
+                <div class="bg-white shadow-sm rounded-xl border border-gray-100 overflow-hidden">
+                    <div class="p-5 border-b flex justify-between items-center bg-gray-50">
+                        <h3 class="font-bold text-gray-800">Recent Tasks Summary</h3>
+                        <button class="text-blue-600 text-sm font-semibold hover:underline">View All</button>
+                    </div>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left">
+                            <thead class="bg-gray-50 text-gray-600 uppercase text-xs font-bold">
+                                <tr>
+                                    <th class="p-4">Task Description</th>
+                                    <th class="p-4">Owner</th>
+                                    <th class="p-4">Due Date</th>
+                                    <th class="p-4">Status</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-sm divide-y divide-gray-100">
+                                <tr class="hover:bg-blue-50 transition">
+                                    <td class="p-4 font-semibold text-gray-800">Final System Backup</td>
+                                    <td class="p-4">Ahmed Ali</td>
+                                    <td class="p-4 text-gray-
